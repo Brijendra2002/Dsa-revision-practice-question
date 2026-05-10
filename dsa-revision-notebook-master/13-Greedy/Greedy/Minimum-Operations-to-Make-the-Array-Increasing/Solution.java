@@ -1,0 +1,16 @@
+/**
+ * Problem Name: Minimum Operations to Make the Array Increasing
+ * Language: Java
+ */
+
+import java.util.*;
+
+class Solution {
+    public int solve(int[] nums) {
+        int answer = 0;
+        for (int value : nums) {
+            answer = Math.max(answer, value);
+        }
+        return answer;
+    }
+}
